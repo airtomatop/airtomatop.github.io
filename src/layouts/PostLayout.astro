@@ -1,0 +1,35 @@
+---
+import '../styles/global.css';
+
+const { title, description } = Astro.props.frontmatter;
+---
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content={description} />
+    <title>{title}</title>
+  </head>
+
+  <body>
+    <nav class="site-nav" aria-label="Navigation principale">
+        <a href="/">Accueil</a>
+        <a href="/blog/">Articles</a>
+        <a href="/about/">À propos</a>
+    </nav>
+
+    <main>
+      <h1>{title}</h1>
+      <slot />
+    </main>
+  </body>
+</html>
+
+<style>
+  main {
+    max-width: 70ch;
+    margin: 3rem auto;
+    padding: 0 1rem;
+  }
+</style>

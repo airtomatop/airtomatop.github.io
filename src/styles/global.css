@@ -32,3 +32,101 @@ html {
 em {
     color: var(--rp-love)
 }
+
+main {
+  max-width: 70ch;
+  margin: 3rem auto;
+  padding: 0 1rem;
+
+  font-size: 1.1875rem;
+  line-height: 1.65;
+}
+
+/* Toutes les équations : légèrement plus grandes que le texte */
+svg.typst-math {
+  font-size: 1.08em;
+}
+
+/* Équations en bloc : centrées et espacées */
+svg.typst-math.typst-display {
+  display: block;
+  margin: 1.6em auto;
+}
+
+.diagram {
+  margin: 1.6em 0;
+  overflow-x: auto;
+}
+
+.diagram .pele {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+
+  --pele-bg: var(--rp-base);
+  --pele-fg: var(--rp-text);
+  --pele-muted: var(--rp-subtle);
+  --pele-line: var(--rp-text);
+  --pele-surface: var(--rp-surface);
+  --pele-surface-alt: var(--rp-overlay);
+  --pele-border: var(--rp-highlight-high);
+  --pele-accent: var(--rp-pine);
+}
+
+/* Blocs de code */
+main pre {
+  margin: 1.6em 0;
+  padding: 1.2rem 1.4rem;
+  border: 1px solid var(--rp-highlight-med);
+  border-radius: 0.6rem;
+  font-size: 0.9em;
+  line-height: 1.5;
+  overflow-x: auto;
+}
+
+main pre code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: inherit;
+}
+
+/* Code dans une phrase */
+main :not(pre) > code {
+  padding: 0.15em 0.35em;
+  border-radius: 0.25rem;
+  background: var(--rp-overlay);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.9em;
+}
+
+.site-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+
+  max-width: 70ch;
+  margin: 1.5rem auto 0;
+  padding: 0 1rem 1rem;
+
+  font-size: 1.1875rem;
+  border-bottom: 1px solid var(--rp-highlight-med);
+}
+
+.site-nav a {
+  padding: 0.35rem 0;
+  color: var(--rp-subtle);
+  text-decoration: none;
+  transition: color 150ms ease;
+}
+
+.site-nav a:hover {
+  color: var(--rp-pine);
+  text-decoration: underline;
+  text-underline-offset: 0.3em;
+}
+
+.site-nav a:focus-visible {
+  outline: 2px solid var(--rp-pine);
+  outline-offset: 5px;
+  border-radius: 2px;
+}

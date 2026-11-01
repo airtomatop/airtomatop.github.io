@@ -12,6 +12,10 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^7.4.4"
+    "@astrojs/markdown-remark": "^7.3.5",
+    "@myriaddreamin/rehype-typst": "^0.7.0",
+    "astro": "^7.4.4",
+    "pele": "^1.13.0",
+    "remark-math": "^6.0.0"
   }
 }
