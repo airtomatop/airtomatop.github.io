@@ -1,0 +1,34 @@
+:root {
+  /* Fonds */
+  --rp-base:    #faf4ed;
+  --rp-surface: #fffaf3;
+  --rp-overlay: #f2e9e1;
+
+  /* Texte */
+  --rp-muted:  #9893a5;
+  --rp-subtle: #797593;
+  --rp-text:   #575279;
+
+  /* Accents */
+  --rp-love: #b4637a;
+  --rp-gold: #ea9d34;
+  --rp-rose: #d7827e;
+  --rp-pine: #286983;
+  --rp-foam: #56949f;
+  --rp-iris: #907aa9;
+
+  /* Surbrillances */
+  --rp-highlight-low:  #f4ede8;
+  --rp-highlight-med:  #dfdad9;
+  --rp-highlight-high: #cecacd;
+}
+
+html {
+    background-color: var(--rp-base);
+    color: var(--rp-text);
+    font-family: "American Typewriter", serif;
+}
+
+em {
+    color: var(--rp-love)
+}
