@@ -131,6 +131,18 @@ main :not(pre) > code {
   border-radius: 2px;
 }
 
-main {
-  margin-inline: 7.5%;
+
+/* Écrans de 600 px de large ou moins */
+@media (max-width: 600px) {
+  main {
+    margin: 1.5rem auto;
+    padding: 0 0.5rem;
+    font-size: 1rem;
+  }
+
+  .site-nav {
+    padding: 0 0.5rem 0.75rem;
+    font-size: 1rem;
+    gap: 1rem;
+  }
 }
