@@ -130,3 +130,7 @@ main :not(pre) > code {
   outline-offset: 5px;
   border-radius: 2px;
 }
+
+main {
+  margin-inline: 7.5%;
+}
