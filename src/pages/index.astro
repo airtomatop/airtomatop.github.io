@@ -9,12 +9,23 @@ import '../styles/global.css';
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} >
     <title>r.Blog</title>
-    <a href="/">Acceuil</a> 
-    <a href="/about/"> About </a>
-    <a href="/blog/">Posts</a>
+    <nav class="site-nav" aria-label="Navigation principale">
+        <a href="/">Accueil</a>
+        <a href="/blog/">Articles</a>
+        <a href="/about/">À propos</a>
+    </nav>
   </head>
   <body>
     <h1>Home</h1>
-    <p>Rien a voir ici...</p>
+
+    <p>Moi même je ne sais pas trop pourquoi je crée ce blog mais ça avait l'air marrant et ça peut 
+    être un bon moyen d'experimenter et d'apprendre a faire des choses dont j'ai pas l'habitude</p>
+    <p>Utilisation de l'IA : J'écris moi même mais l'IA m'aide pour la mise en page et 
+    créer des schéma par exemple (je ne suis pas très bon avec mermaid)</p>
+    <p>Software : J'utilise Astro pour le blog (donc je peux écrire mes articles en markdown)
+    et chatGPT m'aide a faire en sorte que ça soit joli et que ça resemble pas trop a une page html
+    toute simple</p>
+    <p><a href="/about/">ici</a> pour en apprendre un peu plus sur moi</p>
+
   </body>
 </html>
